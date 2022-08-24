@@ -1,0 +1,104 @@
+:root{
+    --dark-blue: #454D6B;
+    --light-blue:#6495ED;
+    --light-black: #1E1E1E;
+    --dark-gray: #5C5D8D;
+    --whith: #FFFFFF;
+}
+
+
+
+.main__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--light-black);
+  }
+
+.main__container__form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+    background-color: var(--light-blue);
+    width: 334px;
+    height: 306px;
+    width: 297px;
+    border-radius: 10px;
+}
+.login--title{
+    font-size: 2.1em;
+    font-weight: 700;
+    color: var(--whith);
+    
+}
+
+.login--input{
+    width: 80%;
+    height: 49px;
+    border-radius: 10px;
+    border: 1px solid var(--dark-blue);
+    background-color: var(--whith);
+    padding: 15px 13px;
+}
+
+.login--btn{
+    background-color: var(--dark-gray);
+    color: var(--whith);
+    width: 60%;
+    height: 38px;
+    border: 1px solid transparent;
+    font-size: 1em;
+    border-radius: 20px;
+    font-weight: 700;
+}
+p{
+    color: var(--whith);
+}
+.login--signup{
+    color: var(--whith);
+    text-decoration: underline;
+}
+
+/* --------------SIGNUP------------------- */
+
+.main__container__form__signup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+    background-color: var(--light-blue);
+    width: 334px;
+    height: 454px;
+    width: 297px;
+    border-radius: 10px;
+}
+
+.signup--title{
+    font-size: 2.1em;
+    font-weight: 700;
+    color: var(--whith);
+}
+
+
+.signup--input{
+    width: 80%;
+    height: 49px;
+    border-radius: 10px;
+    border: 1px solid var(--dark-blue);
+    background-color: var(--whith);
+    padding: 15px 13px;
+}
+
+.signup--btn{
+    background-color: var(--dark-gray);
+    color: var(--whith);
+    width: 60%;
+    height: 38px;
+    border: 1px solid transparent;
+    font-size: 1em;
+    border-radius: 20px;
+    font-weight: 700;
+}
