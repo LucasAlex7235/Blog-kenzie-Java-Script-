@@ -1,12 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../styles/reset.css">
+    <link rel="stylesheet" href="./../styles/style.css">
+    <script defer type="module" src="./../script/index.js"></script>
     <title>Document</title>
 </head>
+
 <body>
-    
+
+    <main class="main__container--desboard">
+        <header class="header__container">
+            <figure>
+                <img id="photoUser" src="./../img/0512-Gatinho-chegou.jpg" alt="">
+            </figure>
+            <h1 id="nameUser">Nome da pessoa</h1>
+            <button>Sair</button>
+        </header>
+
+        <div class="message__user">
+            <input id="sendMessage" type="text" placeholder="No que está pensando?">
+            <button>+</button>
+        </div>
+
+        <ul class="dashboard__container">
+            <li id="cardUser" class="card">
+                <figure>
+                    <img id="cardUserPhoto" src="./../img/0512-Gatinho-chegou.jpg" alt="">
+                </figure>
+
+                <h3 id="cardUserName">Nome</h3>
+
+
+                <div class="card__user--description">
+                    <p id="cardUserDescription">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eos maiores consequuntur possimus, veniam expedita, ducimus porro quasi ullam, consectetur beatae facilis deserunt et? Similique labore iure iste ratione officiis.
+                    </p>
+                </div>
+
+                <span id="cardUserDate">25/08/2022</span>
+
+                <div class="card__user--edit hiden">
+                    <button>
+                        <img src="./../img/edit 1.png" alt="">
+                    </button>
+                    <button>
+                        <img src="./../img/trash-bin 1.png" alt="">
+                    </button>
+                </div>
+            </li>
+
+
+            <div id="blurredBackground" class="blurred__background hiden"></div>
+
+            <li id="editMessage" class="edit--description hiden">
+                <h3>Editar</h3>
+                <input type="text" placeholder="Edite seu comentario">
+                <button>Enviar</button>
+            </li>
+
+            <li id="deleteMessage" class="delete--description hiden">
+                <h3>Deseja deletar esse poster?</h3>
+                <button>Deletar</button>
+            </li>
+
+
+
+        </ul>
+    </main>
+
+
+
+
 </body>
+
 </html>
