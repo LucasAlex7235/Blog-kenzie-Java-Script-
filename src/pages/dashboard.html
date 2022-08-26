@@ -19,16 +19,16 @@
                 <img id="photoUser" src="./../img/0512-Gatinho-chegou.jpg" alt="">
             </figure>
             <h1 id="nameUser">Nome da pessoa</h1>
-            <button>Sair</button>
+            <button id="exit">Sair</button>
         </header>
 
         <div class="message__user">
             <input id="sendMessage" type="text" placeholder="No que está pensando?">
-            <button>+</button>
+            <button id="postsUser">+</button>
         </div>
 
         <ul class="dashboard__container">
-            <li id="cardUser" class="card">
+            <!-- <li class="card">
                 <figure>
                     <img id="cardUserPhoto" src="./../img/0512-Gatinho-chegou.jpg" alt="">
                 </figure>
@@ -44,14 +44,14 @@
 
                 <span id="cardUserDate">25/08/2022</span>
 
-                <div class="card__user--edit hiden">
+                <div class="card__user--edit">
                     <button>
-                        <img src="./../img/edit 1.png" alt="">
+                        <img class="edit" src="./../img/edit 1.png" alt="">
                     </button>
                     <button>
-                        <img src="./../img/trash-bin 1.png" alt="">
+                        <img class="delete" src="./../img/trash-bin 1.png" alt="">
                     </button>
-                </div>
+                </div>   -->
             </li>
 
 
@@ -59,13 +59,13 @@
 
             <li id="editMessage" class="edit--description hiden">
                 <h3>Editar</h3>
-                <input type="text" placeholder="Edite seu comentario">
-                <button>Enviar</button>
+                <input id="editMessageInput" type="text" placeholder="Edite seu comentario">
+                <button id="submit">Enviar</button>
             </li>
 
             <li id="deleteMessage" class="delete--description hiden">
                 <h3>Deseja deletar esse poster?</h3>
-                <button>Deletar</button>
+                <button id="delete">Deletar</button>
             </li>
 
 
