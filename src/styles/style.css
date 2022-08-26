@@ -1,0 +1,385 @@
+:root {
+    --dark-blue: #454D6B;
+    --light-blue: #6495ED;
+    --light-black: #1E1E1E;
+    --dark-gray: #5C5D8D;
+    --whith: #FFFFFF;
+    --red: #FF3F5B;
+
+}
+
+
+/* --------------LOGIN------------------- */
+
+.main__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--light-black);
+}
+
+.main__container__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--light-blue);
+    width: 334px;
+    height: 306px;
+    width: 297px;
+    border-radius: 10px;
+}
+
+.login--title {
+    font-size: 2.1em;
+    font-weight: 700;
+    color: var(--whith);
+
+}
+
+.login--input {
+    width: 80%;
+    height: 49px;
+    border-radius: 10px;
+    border: 1px solid var(--dark-blue);
+    background-color: var(--whith);
+    padding: 15px 13px;
+}
+
+.login--btn {
+    background-color: var(--dark-gray);
+    color: var(--whith);
+    width: 60%;
+    height: 38px;
+    border: 1px solid transparent;
+    font-size: 1em;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+p {
+    color: var(--whith);
+}
+
+.login--signup {
+    color: var(--whith);
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    .main__container__form {
+        width: 430px;
+        height: 331px;
+
+    }
+}
+
+/* --------------SIGNUP------------------- */
+
+.main__container__form__signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--light-blue);
+    width: 334px;
+    height: 454px;
+    width: 297px;
+    border-radius: 10px;
+}
+
+.signup--title {
+    font-size: 2.1em;
+    font-weight: 700;
+    color: var(--whith);
+}
+
+
+.signup--input {
+    width: 80%;
+    height: 49px;
+    border-radius: 10px;
+    border: 1px solid var(--dark-blue);
+    background-color: var(--whith);
+    padding: 15px 13px;
+}
+
+.signup--btn {
+    background-color: var(--dark-gray);
+    color: var(--whith);
+    width: 60%;
+    height: 38px;
+    border: 1px solid transparent;
+    font-size: 1em;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+@media (min-width: 768px) {
+    .main__container__form__signup {
+        width: 430px;
+        height: 515px;
+
+    }
+}
+
+/* --------------DASHBOARD------------------- */
+
+.main__container--desboard {
+    background-color: var(--dark-blue);
+    height: 100vh;
+    overflow: auto;
+}
+
+.header__container {
+    background-color: var(--light-blue);
+    padding: 9px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__container figure {}
+
+.header__container figure img {
+    width: 68px;
+    height: 66px;
+    border-radius: 50%;
+    margin-right: 9px;
+    object-fit: cover;
+
+}
+
+
+.header__container h1 {
+    color: var(--whith);
+    font-size: 1.25em;
+    font-weight: 700;
+}
+
+.header__container button {
+    width: 128px;
+    height: 38px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: var(--dark-blue);
+    color: var(--whith);
+    margin-left: 9px;
+}
+
+
+.message__user {
+    background-color: var(--whith);
+    width: 90%;
+    margin: 0 auto;
+    height: 108px;
+    margin-top: 39px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+
+.message__user input {
+    width: 90%;
+    margin: 0 auto;
+    height: 50px;
+    margin-bottom: 2px;
+    border: 1px solid transparent;
+
+}
+
+.message__user input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.message__user button {
+    width: 68px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    background-color: var(--dark-blue);
+    color: var(--whith);
+    font-size: 27px;
+    font-weight: 700;
+    height: 30px;
+    margin-right: 24px;
+}
+
+.dashboard__container {}
+
+.card {
+    height: 364px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 61px;
+    background-color: var(--whith);
+    margin-bottom: 56px;
+    padding: 13px 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card figure {}
+
+.card figure img {
+    width: 78px;
+    height: 79px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card h3 {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.card .card__user--description {
+
+    padding: 8px;
+    height: 100px;
+    overflow: auto;
+}
+
+.card .card__user--description p {
+    color: var(--dark-gray);
+}
+
+.card .card__user--edit {
+    margin-top: 10px;
+}
+
+.card .card__user--edit button {
+    border-radius: 50%;
+    background-color: var(--whith);
+    border: 1px solid transparent;
+    margin: 0 6px;
+}
+
+.card .card__user--edit img {}
+
+
+.blurred__background {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.349);
+    position: fixed;
+    top: 0;
+    left: 0;
+
+}
+
+.edit--description {
+    width: 80%;
+    height: 320px;
+    background-color: var(--light-blue);
+    position: fixed;
+    top: 25vh;
+    left: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+}
+
+.edit--description h3 {
+    font-size: 2.1em;
+    font-weight: 700;
+    color: var(--whith);
+}
+
+.edit--description input {
+    background-color: var(--whith);
+    width: 80%;
+    height: 120px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+}
+
+.edit--description input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.edit--description button {
+    background-color: var(--dark-gray);
+    color: var(--whith);
+    width: 60%;
+    height: 38px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+}
+
+.delete--description {
+    width: 80%;
+    height: 176px;
+    background-color: var(--light-blue);
+    position: fixed;
+    top: 40vh;
+    left: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+}
+
+.delete--description h3 {
+    font-size: 1.62em;
+    font-weight: 700;
+    width: 90%;
+    text-align: center;
+    color: var(--whith);
+}
+
+
+.delete--description button {
+    width: 152px;
+    height: 38px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    color:  var(--whith);
+    background-color: var(--red);
+    font-size: 1em;
+    font-weight: 700;
+}
+
+@media (min-width: 832px) {
+    .message__user {
+        width: 746px;
+    }
+
+    .card {
+        width: 746px;
+    }
+
+    .edit--description {
+        position: absolute;
+        width: 430px;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+    }
+
+    .delete--description {
+        position: absolute;
+        width: 430px;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+    }
+
+}
+
+.hiden {
+    display: none;
+}
