@@ -59,9 +59,9 @@ class ApiResponse {
                 window.location.assign('../../src/pages/signup.html')
             })
         }
-        if (location && token == null || token == "undefined") {
+        /*if (location && token == null || token == "undefined") {
             window.location.assign('../../index.html')
-        }
+        }*/
     }
 
     static async createCards() {
