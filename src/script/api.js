@@ -12,31 +12,33 @@ export class ApiRequest {
             headers: this.headers,
             body: JSON.stringify(body)
         })
-        .then(res => res.json())
-        .then(res => {
-            window.location.assign('../../index.html')
-        })
-        .catch(err => console.log(err))
+            .then(res => res.json())
+            .then(res => {
+                window.location.assign('../../index.html')
+                
+            })
+            .catch(err => console.log(err))
 
         return userRegister
     }
 
     static async loginUser(body) {
         const loginUser = await fetch(`${this.baseUrl}/users/login`, {
-        method: "POST",
-        headers: this.headers,
-        body: JSON.stringify(body)
+            method: "POST",
+            headers: this.headers,
+            body: JSON.stringify(body)
         })
-        .then(res => res.json())
-        .then(res => {
-            localStorage.setItem("@kenzieBlog:token", res.token)
-            localStorage.setItem("@kenzieBlog:User_id", res.userId)
-            if(localStorage.getItem("@kenzieBlog:token") != "undefined")
-            window.location.assign('../../src/pages/dashboard.html')
-        })
-        .catch(err => console.log(err))
-        
-        
+            .then(res => res.json())
+            .then(res => {
+                localStorage.setItem("@kenzieBlog:token", res.token)
+                localStorage.setItem("@kenzieBlog:User_id", res.userId)
+                if (localStorage.getItem("@kenzieBlog:token") != "undefined") {
+                    window.location.assign('../../src/pages/dashboard.html')
+                }
+            })
+            .catch(err => console.log(err))
+
+        return loginUser
     }
 
     static async carsUsers() {
@@ -44,11 +46,55 @@ export class ApiRequest {
             method: "GET",
             headers: this.headers
         })
-        .then(res => res.json())
-        .then(res => res.data)
-        .catch(err => console.log(err))
+            .then(res => res.json())
+            .then(res => res.data)
+            .catch(err => console.log(err))
 
         return baseUrl
+    }
+
+    static async newPostUser(body) {
+        const baseUrl = await fetch(`${this.baseUrl}/posts`, {
+            method: "POST",
+            headers: this.headers,
+            body: JSON.stringify(body)
+        })
+            .then(res => res.json())
+            .then(res => console.log(res))
+            .catch(err => console.log(err))
+            window.location.reload()
+    }
+
+    static async editNewPost(body, id) {
+        console.log(body, id)
+        const baseUrl = await fetch(`${this.baseUrl}/posts/${id}`, {
+            method: "PATCH",
+            headers: this.headers,
+            body: JSON.stringify(body)
+        })
+            .then(res => res.json())
+            .then(res => res)
+            .catch(err => console.log(err))
+        window.location.reload()
+    }
+
+    static async newPhotoAndName(id) {
+        const baseUrl = await fetch(`${this.baseUrl}/users/${id}`, {
+            method: "GET",
+            headers: this.headers
+        })
+            .then(res => res.json())
+            .then(res => res)
+            .catch(err => console.log(err))
+            return baseUrl
+    }
+
+    static async deletePostUser(id) {
+        const baseUrl = await fetch(`${this.baseUrl}/posts/${id}`, {
+            method: "DELETE",
+            headers: this.headers
+        })
+        window.location.reload()
     }
 }
 
