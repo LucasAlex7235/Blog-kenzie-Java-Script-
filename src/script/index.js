@@ -129,7 +129,7 @@ class ApiResponse {
         if (post || postDesktop) {
             post.addEventListener("click", (event) => {
                 event.preventDefault()
-
+ 
                 const data = {
                     "content": inputPost.value
                 }
