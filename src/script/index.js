@@ -123,11 +123,22 @@ class ApiResponse {
 
     static postUser() {
         const post = document.getElementById("postsUser")
+        const postDesktop = document.getElementById("postsUserDesktop")
         const inputPost = document.getElementById("sendMessage")
 
-
-        if (post) {
+        if (post || postDesktop) {
             post.addEventListener("click", (event) => {
+                event.preventDefault()
+
+                const data = {
+                    "content": inputPost.value
+                }
+
+                ApiRequest.newPostUser(data)
+
+            })
+
+            postDesktop.addEventListener("click", (event) => {
                 event.preventDefault()
 
                 const data = {

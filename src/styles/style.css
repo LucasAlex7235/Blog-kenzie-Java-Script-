@@ -199,7 +199,7 @@ p {
     outline: 0;
 }
 
-.message__user button {
+.message__user .mobile {
     width: 68px;
     border-radius: 20px;
     border: 1px solid transparent;
@@ -209,6 +209,10 @@ p {
     font-weight: 700;
     height: 30px;
     margin-right: 24px;
+}
+
+.desktop {
+    display: none;
 }
 
 .dashboard__container {}
@@ -347,7 +351,7 @@ p {
     height: 38px;
     border-radius: 20px;
     border: 1px solid transparent;
-    color:  var(--whith);
+    color: var(--whith);
     background-color: var(--red);
     font-size: 1em;
     font-weight: 700;
@@ -356,6 +360,26 @@ p {
 @media (min-width: 832px) {
     .message__user {
         width: 746px;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: flex;
+        width: 84px;
+        border-radius: 20px;
+        border: 1px solid transparent;
+        background-color: var(--dark-blue);
+        color: var(--whith);
+        font-size: 16px;
+        font-weight: 700;
+        height: 30px;
+        margin-right: 24px;
+        justify-content: space-around;
+        align-items: center;
+    
     }
 
     .card {
